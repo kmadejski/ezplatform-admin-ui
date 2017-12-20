@@ -68,6 +68,7 @@
             text-decoration: none;
             cursor: pointer;
             transition: all .2s $ez-admin-transition;
+            margin-bottom: 0;
 
             &:hover,
             &:focus {
