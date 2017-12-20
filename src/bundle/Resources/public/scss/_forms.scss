@@ -19,18 +19,15 @@ form:not(.form-inline) {
         @include label-required();
     }
 
-    .form-control,
-    .form-control-label {
+    .form-control {
         background-color: $ez-white;
     }
 
-    .form-control[readonly],
-    .form-control-label[readonly] {
+    .form-control[readonly] {
         background-color: $ez-white;
     }
 
-    .form-control:focus,
-    .form-control-label:focus {
+    .form-control:focus {
         border-color: $ez-color-secondary;
     }
 }
