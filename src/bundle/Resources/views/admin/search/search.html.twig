@@ -1,7 +1,5 @@
 {% extends "EzPlatformAdminUiBundle::layout.html.twig" %}
 
-{% form_theme form_edit '@EzPlatformAdminUi/parts/form/flat_widgets.html.twig' %}
-
 {% trans_default_domain 'search' %}
 
 {% block page_title %}{% endblock %}
@@ -71,6 +69,9 @@
                             </div>
                         {% endif %}
                     {% endif %}
+
+                    {% form_theme form_edit '@EzPlatformAdminUi/parts/form/flat_widgets.html.twig' %}
+
                     {{ form_start(form_edit, {
                         'action': path('ezplatform.content.edit'),
                         'attr': { 'class': 'ez-edit-content-form'}
