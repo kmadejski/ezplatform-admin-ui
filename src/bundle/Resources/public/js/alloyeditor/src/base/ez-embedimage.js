@@ -17,6 +17,7 @@ export default class EzEmbedImageButton extends EzEmbedDiscoverContentButton {
         const request = new Request(selection.item.ContentInfo.Content.ContentType._href, {
             method: 'GET',
             headers: {'Accept': 'application/vnd.ez.api.ContentType+json'},
+            credentials: 'same-origin',
             mode: 'cors',
         });
 
